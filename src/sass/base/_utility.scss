@@ -1,7 +1,18 @@
 .u-heading-l {
     font-family: $headings-font;
     font-weight: 500;
-    font-size: 6rem;
+    font-size: 2.5rem;
+    color: $white;
+    text-transform: uppercase;
+    
+
+    @include mq($tablet, min) {
+        font-size: 4rem;
+    }
+
+    @include mq($tablet-l, min) {
+        font-size: 6rem;
+    }
 }
 .u-heading-md {
     font-family: $headings-font;
