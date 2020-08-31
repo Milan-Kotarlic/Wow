@@ -1,0 +1,28 @@
+.buttons {
+
+    .buttons__button {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: $white;
+        padding: 0.3rem 0.7rem;
+         margin-bottom: 2rem;
+
+        @include mq($tablet, min) {
+            font-size: 1.8rem;
+        }
+
+        &--1 {
+            background-color: $color-green;
+        }
+
+        &--2 {
+            background-color: $color-beige;
+        }
+
+        &--3 {
+            background-color: $color-red;
+        }
+    
+    }
+}

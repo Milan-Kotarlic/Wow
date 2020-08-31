@@ -4,19 +4,36 @@ margin-bottom: 1.5rem;
 
     .c-flag__left {
         background-color: $color-red;
-        width: 11px;
-        height: 11px;
+        width: 6px;
+        height: 6px;
+
+        @include mq($tablet, min) {
+            width: 11px;
+            height: 11px;  
+        }
     }
 
     .c-flag__center {
         background-color: $color-beige;
-        width: 11px;
-        height: 11px;
+        width: 6px;
+        height: 6px;
+
+
+        @include mq($tablet, min) {
+            width: 11px;
+            height: 11px;  
+        }
     }
 
     .c-flag__right {
         background-color: $color-green;
-        width: 11px;
-        height: 11px;
+        width: 6px;
+        height: 6px;
+
+
+        @include mq($tablet, min) {
+            width: 11px;
+            height: 11px;  
+        }
     }
 }

@@ -59,16 +59,65 @@
             text-transform: uppercase;
 
             &::after {
-                    content: '';
-                    position: absolute;
-                    left: 50%;
-                    top: 1.5rem;
-                    height: 2px;
-                    width: 4rem;
-                    background-color: $color-red-secondary;
-                    transform: translateX(-50%);
-                }
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 1.5rem;
+                height: 2px;
+                width: 4rem;
+                background-color: $color-red-secondary;
+                transform: translateX(-50%);
             }
+        }
 
+    }
+}
+
+.section-affixes {
+    background-image: url(../assets/images/affixes.png);
+    height: 130rem;
+    text-align: center;
+    padding: 1rem;
+
+    .affixes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid $border;
+        padding: 2rem 0;
+
+        .affixes__legend {
+            color: $text;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+
+            @include mq($tablet, min) {
+                font-size: 1.8rem;
+            }
+        }
+
+        .affixes__text {
+            color: $white;
+            font-size: 1.2rem;
+
+            @include mq($tablet, min) {
+                font-size: 1.8rem;
+            }
+        }
+        .u-heading-sm {
+            position: relative;
+            margin: 2rem 0;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                height: 2px;
+                width: 4rem;
+                bottom: -1rem;
+                background-color: $color-red-secondary;
+                transform: translateX(-50%);
+            };
         }
     }
+}
