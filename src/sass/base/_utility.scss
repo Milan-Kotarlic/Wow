@@ -1,9 +1,15 @@
 .u-heading-l {
-    font-size: 4rem;
+    font-family: $headings-font;
+    font-weight: 500;
+    font-size: 6rem;
 }
 .u-heading-md {
-    font-size: 3rem;
+    font-family: $headings-font;
+    font-weight: 500;
+    font-size: 5rem;
 }
 .u-heading-sm {
-    font-size: 2.5rem;
+    font-family: $headings-font;
+    font-weight: 500;
+    font-size: 3rem;
 }
