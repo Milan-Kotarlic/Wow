@@ -5,7 +5,6 @@
     color: $white;
     text-transform: uppercase;
     
-
     @include mq($tablet, min) {
         font-size: 4rem;
     }
@@ -14,6 +13,7 @@
         font-size: 6rem;
     }
 }
+
 .u-heading-md {
     font-family: $headings-font;
     font-weight: 500;
@@ -29,6 +29,7 @@
         font-size: 5rem;
     }
 }
+
 .u-heading-sm {
     font-family: $headings-font;
     font-weight: 500;

@@ -1,39 +1,23 @@
 .c-flag {
-display: flex;
-margin-bottom: 1.5rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+}
 
-    .c-flag__left {
-        background-color: $color-red;
-        width: 6px;
-        height: 6px;
+.c-flag__main {
+    background-color: $color-red;
+    width: 6px;
+    height: 6px;
 
-        @include mq($tablet, min) {
-            width: 11px;
-            height: 11px;  
-        }
+    @include mq($tablet, min) {
+        width: 11px;
+        height: 11px;
     }
 
-    .c-flag__center {
+    &--center {
         background-color: $color-beige;
-        width: 6px;
-        height: 6px;
-
-
-        @include mq($tablet, min) {
-            width: 11px;
-            height: 11px;  
-        }
     }
 
-    .c-flag__right {
+    &--right {
         background-color: $color-green;
-        width: 6px;
-        height: 6px;
-
-
-        @include mq($tablet, min) {
-            width: 11px;
-            height: 11px;  
-        }
     }
 }
