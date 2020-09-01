@@ -116,6 +116,20 @@
     @include mq($tablet-l, min) {
         margin-bottom: 4rem;
     }
+
+    &--alt {
+        text-transform: uppercase;
+    }
+
+    &--alt-line {
+        position: relative;
+        max-width: 92.7rem;
+
+        &::before {
+            @include line;
+            background-color: $color-green;
+        }
+    }
 }
 
 .affixes__text {
@@ -142,7 +156,6 @@
     
 .section-affixes-and-schedule {
     background-image: linear-gradient(180deg, $gray-1 0%, $gray-2 0.01%, $gray-3 100%);
-    height: 160rem;
     text-align: center;
     padding: 1rem;
 }
