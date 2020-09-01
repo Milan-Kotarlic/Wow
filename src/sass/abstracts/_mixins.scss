@@ -22,7 +22,7 @@
 	background-color: $color-red-secondary;
 	transform: translateX(-50%);
 
-	@include mq($tablet, min) {
+	@include mq($tablet-l, min) {
 			width: 8.4rem;
 			bottom: -2rem;
 	}
