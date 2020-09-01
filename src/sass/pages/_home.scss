@@ -160,3 +160,79 @@
     text-align: center;
     padding: 1rem;
 }
+
+.considerations-section {
+    background-image: url(../assets/images/considerations.png);
+    background-size: cover;
+    text-align: center;
+    padding: 1rem;
+}
+
+.considerations-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $border;
+    padding: 2rem 0;
+
+    @include mq($tablet-l, min) {
+        padding: 3rem 10rem 5rem;
+    }
+}
+
+.considerations__text {
+    font-size: 1.2rem;
+    color: $text;
+    font-weight: 500;
+    margin-bottom: 2rem;
+
+    @include mq($tablet, min) {
+        font-size: 1.8rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.cosiderations__group {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $white;
+
+    @include mq($tablet, min) {
+        font-size: 1.8rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+
+        @include mq($tablet, min) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.considerations__list {
+    list-style-type: none;
+    text-align: left;
+    
+
+    @include mq($tablet, min) {
+        margin-top: 3.9rem;
+    }
+
+}
+
+.considerations__item {
+    position: relative;
+    font-size: 1.2rem;
+    color: $text;
+
+    @include mq($tablet, min) {
+        font-size: 1.8rem;
+    }
+
+    &::before {
+        content: '\25A0';
+        color: $color-green;
+        margin-right: 1.4rem;
+    }
+}
