@@ -4,7 +4,7 @@
 	margin: 0 auto;
 }
 
-.c-table {
+.c-table-affixes {
 	position: relative;
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -14,19 +14,18 @@
 	width: 90rem;
 	margin: 2rem auto;
 
+	td, th {
+		padding: 1rem 5rem;
+		text-align: left;
+	}
 }
 
-td, th {
-	padding: 1rem 5rem;
-	text-align: left;
-}
-
-.c-table__first-row {
+.c-table-affixes__first-row {
 	background-color: $color-green;
 	color: $table-header;
 }
 
-.c-table__content-row {
+.c-table-affixes__content-row {
 
 	&--alt {
 	background-color: $table-header;
