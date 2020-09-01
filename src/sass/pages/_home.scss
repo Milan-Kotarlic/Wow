@@ -13,6 +13,15 @@
         height: 100vh;
     }
 }
+.hero-section__text {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    @include mq($tablet, min) {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+}
 
 .hero-section__title-box {
     display: flex;
@@ -22,13 +31,8 @@
         margin-top: 1.5rem;
 
         &::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            height: 2px;
-            width: 4rem;
-            background-color: $color-red-secondary;
-            transform: translateX(-50%);
+            @include line;
+            top: 0;
         }
     }
 }
@@ -63,7 +67,7 @@
 .hero-section__scroll {
     position: absolute;
     left: 2rem;
-    bottom: 5rem;
+    bottom: 10rem;
     transform: rotate(-90deg);
 }
 
@@ -72,21 +76,15 @@
     text-transform: uppercase;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 1.5rem;
-        height: 2px;
-        width: 4rem;
-        background-color: $color-red-secondary;
-        transform: translateX(-50%);
+        @include line;
+        left: -0.5rem;
     }
 }
 
 .section-affixes {
     background-image: url(../assets/images/affixes.png);
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 1rem 0;
 }
 
 .affixes {
@@ -95,6 +93,14 @@
     align-items: center;
     border-bottom: 1px solid $border;
     padding: 2rem 0;
+
+    @include mq($tablet-l, min) {
+        padding: 5rem 10rem 5rem;
+    }
+
+    &--alt {
+        border-bottom: none;
+    }
 }
 
 .affixes__legend {
@@ -104,6 +110,11 @@
 
     @include mq($tablet, min) {
         font-size: 1.8rem;
+        margin-bottom: 3rem;
+    }
+
+    @include mq($tablet-l, min) {
+        margin-bottom: 4rem;
     }
 }
 
@@ -120,15 +131,18 @@
     position: relative;
     margin: 2rem 0;
 
+    @include mq($tablet-l, min) {
+        margin: 5rem 0;
+    }
+
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        height: 2px;
-        width: 4rem;
-        bottom: -1rem;
-        background-color: $color-red-secondary;
-        transform: translateX(-50%);
+        @include line;
     }
 }
     
+.section-affixes-and-schedule {
+    background-image: linear-gradient(180deg, $gray-1 0%, $gray-2 0.01%, $gray-3 100%);
+    height: 160rem;
+    text-align: center;
+    padding: 1rem;
+}

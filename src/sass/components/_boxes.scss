@@ -1,7 +1,8 @@
 .c-boxes {
 
     @include mq($phone, min) {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -15,6 +16,15 @@
     &--alt {
         border: 2px solid $color-red;
         background-color: rgba($black, 0.5);
+    }
+
+    &--alt-beige {
+        border: 2px solid $color-beige;
+    }
+
+    &--alt-background {
+        box-shadow: none;
+        background-color: transparent;
     }
 }
 
@@ -36,11 +46,23 @@
         font-size: 1.6rem;
     }
 
+    &--beige {
+        background-color: $color-beige;
+    }
+
 }
 
 .box__title {
     color: $color-red;
     text-transform: initial;
+
+    &--beige {
+        color: $color-beige;
+    }
+
+    &--green {
+        color: $color-green;
+    }
 }
 
 .box__text {
@@ -50,18 +72,26 @@
     position: relative;
 
     &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        height: 2px;
-        width: 4rem;
-        bottom: -1rem;
-        background-color: $color-red-secondary;
-        transform: translateX(-50%);
+       @include line;
     }
 
     @include mq($tablet, min) {
         font-size: 1.8rem;
+        margin: 1rem 0 4rem;
+    }
+
+    &--beige {
+
+        &:after {
+            background-color: $color-beige;
+        }
+    }
+
+    &--green {
+
+        &:after {
+            background-color: $color-green;
+        }
     }
 }
 

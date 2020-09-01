@@ -1,6 +1,10 @@
 .c-flag {
     display: flex;
     margin-bottom: 1.5rem;
+
+    @include mq($tablet-l, min) {
+        margin-bottom: 3rem;
+    }
 }
 
 .c-flag__main {

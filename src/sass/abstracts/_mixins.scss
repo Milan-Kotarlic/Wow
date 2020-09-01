@@ -10,3 +10,20 @@
 	justify-content: center;
 	align-items: center;
 }
+
+//line under titles
+@mixin line{
+	content: '';
+	position: absolute;
+	left: 50%;
+	height: 2px;
+	width: 4rem;
+	bottom: -1rem;
+	background-color: $color-red-secondary;
+	transform: translateX(-50%);
+
+	@include mq($tablet, min) {
+			width: 8.4rem;
+			bottom: -2rem;
+	}
+}
