@@ -1,0 +1,23 @@
+.c-flag {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.c-flag__main {
+    background-color: $color-red;
+    width: 6px;
+    height: 6px;
+
+    @include mq($tablet, min) {
+        width: 11px;
+        height: 11px;
+    }
+
+    &--center {
+        background-color: $color-beige;
+    }
+
+    &--right {
+        background-color: $color-green;
+    }
+}

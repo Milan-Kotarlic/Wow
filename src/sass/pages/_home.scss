@@ -1,0 +1,134 @@
+.hero-section {
+    @include flex-center;
+    flex-direction: column;
+    background-image: url(../assets/images/hero-background.png);
+    background-size: cover;
+    height: 80vh;
+    color: $text;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+
+    @include mq($lap-small, min) {
+        height: 100vh;
+    }
+}
+
+.hero-section__title-box {
+    display: flex;
+
+    &:first-of-type {
+        position: relative;
+        margin-top: 1.5rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            height: 2px;
+            width: 4rem;
+            background-color: $color-red-secondary;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.hero-section__title-box-title-language {
+    color: $text;
+    margin-right: 1rem;
+    position: relative;
+
+    @include mq($lap-small, min) {
+        margin-right: 3rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 3rem;
+        right: -1rem;
+        top: 1rem;
+        background-color: $color-beige;
+
+        @include mq($lap-small, min) {
+            right: -1.5rem;
+            top: 3rem;
+            height: 5.7rem;
+        }
+
+    }
+}
+
+.hero-section__scroll {
+    position: absolute;
+    left: 2rem;
+    bottom: 5rem;
+    transform: rotate(-90deg);
+}
+
+.hero-section__scroll-text {
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 1.5rem;
+        height: 2px;
+        width: 4rem;
+        background-color: $color-red-secondary;
+        transform: translateX(-50%);
+    }
+}
+
+.section-affixes {
+    background-image: url(../assets/images/affixes.png);
+    text-align: center;
+    padding: 1rem;
+}
+
+.affixes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $border;
+    padding: 2rem 0;
+}
+
+.affixes__legend {
+    color: $text;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+    @include mq($tablet, min) {
+        font-size: 1.8rem;
+    }
+}
+
+.affixes__text {
+    color: $white;
+    font-size: 1.2rem;
+
+    @include mq($tablet, min) {
+        font-size: 1.8rem;
+    }
+}
+
+.affixes__heading {
+    position: relative;
+    margin: 2rem 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        height: 2px;
+        width: 4rem;
+        bottom: -1rem;
+        background-color: $color-red-secondary;
+        transform: translateX(-50%);
+    }
+}
+    
