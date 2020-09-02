@@ -1,0 +1,68 @@
+.footer {
+	background-color: $black;
+	text-align: center;
+	color: $white;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+	@include mq($tablet, min) {
+		font-size: 1.8rem;
+	}
+}
+.footer__top {
+	padding: 2rem 0;
+
+	@include mq($tablet, min) {
+		padding: 6rem 0;
+}
+}
+
+.footer__text {
+	margin-bottom: 1rem;
+	font-weight: 500;
+
+	@include mq($tablet, min) {
+		margin-bottom: 4rem;
+	}
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+
+	@include mq($tablet, min) {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+.footer-links__text {
+	
+	@include mq($tablet, min) {
+		margin: 0 2.2rem;
+	}
+
+	@include mq($tablet-l, min) {
+		margin: 0 5rem;
+	}
+}
+
+.footer-links__link {
+	color: $white;
+	text-decoration: none;
+
+	&--alt {
+		color: $color-blue;
+	}
+}
+
+.footer__bottom {
+	background-color: $background;
+}
+
+.footer__bottom-text {
+	padding: 0.5rem;
+
+	@include mq($tablet, min) {
+		padding: 1.6rem;
+	}
+}
