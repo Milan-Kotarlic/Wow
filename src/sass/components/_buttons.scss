@@ -8,6 +8,8 @@
 
     @include mq($tablet, min) {
         font-size: 1.8rem;
+        padding: 1rem 3.2rem;
+        margin: 0 1.25rem 5rem
     }
 
     &--1 {
