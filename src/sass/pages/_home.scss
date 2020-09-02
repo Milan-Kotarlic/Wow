@@ -79,6 +79,11 @@
     &::after {
         @include line;
         left: -0.5rem;
+        bottom: -1.2rem;
+
+        @include mq($tablet, min) {
+            bottom: -1.2rem; //to override line mixin media querry on big screen
+        }
     }
 }
 
