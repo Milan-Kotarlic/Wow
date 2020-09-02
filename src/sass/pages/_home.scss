@@ -33,7 +33,15 @@
 
         &::before {
             @include line;
-            top: 0;
+            top: -.2rem;
+
+            @include mq($tablet, min) {
+                top: -1.5rem;
+            }
+
+            @include mq($tablet-l, min) {
+                top: -0.5rem;
+            }
         }
     }
 }
