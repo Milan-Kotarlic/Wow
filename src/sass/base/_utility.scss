@@ -5,12 +5,15 @@
     color: $white;
     text-transform: uppercase;
     
+    
     @include mq($tablet, min) {
         font-size: 4rem;
+        line-height: 5.56rem;
     }
 
     @include mq($lap-small, min) {
         font-size: 6rem;
+        line-height: 11.2rem;
     }
 }
 

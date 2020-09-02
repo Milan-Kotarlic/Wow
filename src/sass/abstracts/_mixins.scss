@@ -23,6 +23,10 @@
 	transform: translateX(-50%);
 
 	@include mq($tablet-l, min) {
+<<<<<<< HEAD
+			
+=======
+>>>>>>> 7aa224e0e59411e100e430bfecc8e67efdd3fd9c
 			bottom: -2rem;
 	}
 }

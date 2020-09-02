@@ -40,7 +40,11 @@
             }
 
             @include mq($tablet-l, min) {
+<<<<<<< HEAD
+                top: -0.5rem;
+=======
                 top: -.5rem;
+>>>>>>> 7aa224e0e59411e100e430bfecc8e67efdd3fd9c
             }
         }
     }
