@@ -26,6 +26,11 @@
 
 .hero-section__title-box {
     display: flex;
+    flex-direction: column;
+
+    @include mq($phone, min) {
+        flex-direction: row;
+    }
 
     &:first-of-type {
         position: relative;
@@ -40,11 +45,7 @@
             }
 
             @include mq($tablet-l, min) {
-<<<<<<< HEAD
                 top: -0.5rem;
-=======
-                top: -.5rem;
->>>>>>> 7aa224e0e59411e100e430bfecc8e67efdd3fd9c
             }
         }
     }
@@ -62,11 +63,20 @@
     &::before {
         content: '';
         position: absolute;
-        width: 1px;
-        height: 3rem;
-        right: -0.5rem;
-        top: 1rem;
+        height: 1px;
+        width: 3rem;
+        right: 50%;
+        transform: translateX(50%);
+        top: 4.5rem;
         background-color: $color-beige;
+
+        @include mq($phone, min) {
+            height: 3rem;
+            width: 1px;
+            right: -0.5rem;
+            top: 1rem;
+            transform: translateX(0);
+        }
 
         @include mq($tablet, min) {
             top: 2.2rem;
@@ -87,11 +97,16 @@
     left: 2rem;
     bottom: 10rem;
     transform: rotate(-90deg);
+
+    @include mq($lap-small, min) {
+        left: 10.9rem;
+    }
 }
 
 .hero-section__scroll-text {
     position: relative;
     text-transform: uppercase;
+    line-height: 1.6rem;
 
     &::after {
         @include line;
@@ -108,6 +123,10 @@
     background-image: url(../assets/images/affixes.png);
     text-align: center;
     padding: 1rem 1rem 0;
+
+    @include mq($tablet, min) {
+        padding-top: 9.2rem;
+    }
 }
 
 .affixes {
@@ -118,7 +137,7 @@
     padding: 2rem 0;
 
     @include mq($tablet-l, min) {
-        padding: 5rem 10rem 5rem;
+        padding: 0 10rem 3.2rem;
     }
 
     &--alt {
@@ -130,27 +149,40 @@
     color: $text;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    font-style: italic;
 
     @include mq($tablet, min) {
         font-size: 1.8rem;
-        margin-bottom: 3rem;
-    }
-
-    @include mq($tablet-l, min) {
-        margin-bottom: 4rem;
+        margin-bottom: 2.4rem;
     }
 
     &--alt {
         text-transform: uppercase;
+        margin-bottom: 1rem;
+        
+        @include mq($tablet, min) {
+            margin-bottom: 3.8rem;
+        }
     }
 
     &--alt-line {
         position: relative;
         max-width: 92.7rem;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 2rem;
+
+        @include mq($tablet, min) {
+            margin-bottom: 5.6rem;
+        }
 
         &::before {
             @include line;
             background-color: $color-green;
+
+            @include mq($tablet, min) {
+                bottom: -3rem;
+            }
         }
     }
 }
@@ -158,6 +190,7 @@
 .affixes__text {
     color: $white;
     font-size: 1.2rem;
+    font-weight: 400;
 
     @include mq($tablet, min) {
         font-size: 1.8rem;
@@ -166,14 +199,22 @@
 
 .affixes__heading {
     position: relative;
-    margin: 2rem 0;
+    margin: 0 0 2rem;
 
     @include mq($tablet-l, min) {
-        margin: 5rem 0;
+        margin: 0 0 5rem;
     }
 
     &::after {
         @include line;
+    }
+
+    &:not(:first-of-type) {
+        margin-top: 2rem;
+
+        @include mq($tablet, min) {
+            margin-top: 5rem;
+        }
     }
 }
     
@@ -181,13 +222,17 @@
     background-image: linear-gradient(180deg, $gray-1 0%, $gray-2 0.01%, $gray-3 100%);
     text-align: center;
     padding: 1rem;
+
+    @include mq($tablet, min) {
+        padding: 3.3rem 0 4.4rem
+    }
 }
 
 .considerations-section {
     background-image: url(../assets/images/considerations.png);
     background-size: cover;
     text-align: center;
-    padding: 1rem 1rem 0;
+    padding: 0 1rem 0;
 }
 
 .considerations-wrapper {
@@ -205,12 +250,12 @@
 .considerations__text {
     font-size: 1.2rem;
     color: $text;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 2rem;
 
     @include mq($tablet, min) {
         font-size: 1.8rem;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -236,6 +281,7 @@
     &--alt {
         margin-bottom: 0;
         text-align: left;
+        font-weight: 700;
 
         @include mq($tablet, min) {
             line-height: 3rem;
@@ -246,6 +292,7 @@
     color: $color-blue;
     text-decoration: none;
     font-weight: 500;
+    transition: all 0.5s ease;
 
     &:hover {
         text-decoration: underline;
@@ -257,7 +304,7 @@
     align-self: start;
 
     @include mq($tablet, min) {
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
     
         &::before {
@@ -282,6 +329,7 @@
     position: relative;
     font-size: 1.2rem;
     color: $text;
+    font-weight: 700;
 
     @include mq($tablet, min) {
         font-size: 1.8rem;

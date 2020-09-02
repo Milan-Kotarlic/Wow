@@ -5,7 +5,15 @@
 }
 
 .l-container-md {
-    max-width: 114rem;
+    max-width: 64rem;
     width: 100%;
     margin: 0 auto;
+
+    @include mq($tablet-sm, min) {
+        max-width: 76.7rem;
+    }
+
+    @include mq($tablet-l, min) {
+        max-width: 114rem;
+    }
 }

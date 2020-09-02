@@ -80,6 +80,7 @@
     font-size: 1.2rem;
     margin: 1rem 0 2rem;
     position: relative;
+    font-weight: 400;
 
     &::after {
        @include line;
@@ -106,10 +107,10 @@
 }
 
 .box__note {
-    font-weight: 500;
     font-style: italic;
     color: $text;
     font-size: 1.2rem;
+    line-height: 1.6rem;
 
     @include mq($tablet, min) {
         font-size: 1.4rem;

@@ -13,5 +13,11 @@ html {
 
 body {
     font-family: $main-font;
+    font-weight: 500;
+    
+}
+
+p, li, a {
+    line-height: 2.1rem;
 }
 

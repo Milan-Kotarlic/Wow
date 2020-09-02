@@ -23,6 +23,7 @@
     font-size: 2.1rem;
     color: $white;
     text-transform: uppercase;
+    line-height: 4.7rem;
 
     @include mq($tablet, min) {
         font-size: 3rem;
@@ -30,6 +31,7 @@
 
     @include mq($lap-small, min) {
         font-size: 5rem;
+        line-height: 9.4rem;
     }
 }
 
@@ -39,6 +41,7 @@
     font-size: 1.8rem;
     color: $text;
     text-transform: uppercase;
+    line-height: 4.6rem;
 
     @include mq($tablet, min) {
         font-size: 2.5rem;
@@ -46,5 +49,6 @@
 
     @include mq($lap-small, min) {
         font-size: 3rem;
+        line-height: 5.6rem;
     }
 }
