@@ -11,7 +11,7 @@
         line-height: 5.56rem;
     }
 
-    @include mq($tablet-l, min) {
+    @include mq($lap-small, min) {
         font-size: 6rem;
         line-height: 11.2rem;
     }
@@ -28,7 +28,7 @@
         font-size: 3rem;
     }
 
-    @include mq($tablet-l, min) {
+    @include mq($lap-small, min) {
         font-size: 5rem;
     }
 }
@@ -44,7 +44,7 @@
         font-size: 2.5rem;
     }
 
-    @include mq($tablet-l, min) {
+    @include mq($lap-small, min) {
         font-size: 3rem;
     }
 }
