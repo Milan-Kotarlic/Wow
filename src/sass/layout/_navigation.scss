@@ -1,0 +1,76 @@
+.navigation {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	text-align: right;
+	padding: 1rem;
+	font-size: 1.2rem;
+	background-color: rgba($black, 0.5);
+	font-weight: 700;
+
+	@include mq($tablet, min) {
+		font-size: 1.8rem;
+		padding: 1.5rem 1rem;
+		background-color: rgba($black, 0.7);
+	}
+}
+
+.navigation__hamburger {
+	display: inline-block;
+	position: relative;
+	left: 1.5rem;
+	top: -0.2rem;
+	width: 1.6rem;
+	height: 2px;
+	background-color: $text;
+
+	@include mq($tablet, min) {
+		display: none;
+	}
+
+	&::before, &::after {
+		position: absolute;
+		top: 0.6rem;
+		right: 0;
+		content: '';
+		width: 1.6rem;
+		height: 2px;
+		background-color: $text;
+	}
+
+	&::after {
+		top: 1.2rem;
+	}
+	
+}
+.navigation__checkbox {
+	position: relative;
+	opacity: 0;
+
+	@include mq($tablet, min) {
+		display: none;
+	}
+}
+
+.navigation__list {
+	display: none;
+	list-style-type: none;
+	transition: all 1s ease;
+
+	@include mq($tablet, min) {
+		display: flex;
+		justify-content: space-around;
+	}
+
+}
+
+.navigation__link {
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.navigation__checkbox:checked~.navigation__list {
+	display: block;
+}

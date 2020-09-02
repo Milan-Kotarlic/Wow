@@ -3,10 +3,9 @@
     flex-direction: column;
     background-image: url(../assets/images/hero-background.png);
     background-size: cover;
-    height: 80vh;
     color: $text;
     text-align: center;
-    padding: 1rem;
+    padding: 9rem 1rem 12rem;;
     position: relative;
 
     @include mq($lap-small, min) {
