@@ -9,11 +9,13 @@
 html {
 	box-sizing: border-box;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: $main-font;
     font-weight: 500;
+   
     
 }
 

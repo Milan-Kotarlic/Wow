@@ -9,9 +9,22 @@
 </head>
 
 <body>
+    <nav class="navigation">
+        <div class="l-container">
+            <span class="navigation__hamburger">&nbsp;</span>
+        <input type="checkbox" class="navigation__checkbox">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="#affixes" class="navigation__link">Affixes</a></li>
+            <li class="navigation__item"><a href="#2affixes" class="navigation__link">Level 2</a></li>
+            <li class="navigation__item"><a href="#4affixes" class="navigation__link">Level 4</a></li>
+            <li class="navigation__item"><a href="#group" class="navigation__link">Considerations</a></li>
+            <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
     <main>
-        <section class="hero-section">
-
+        <section id="home" class="hero-section">
             <p class="hero-section__text">What garbage affixes do I have to deal this week? </p>
             <div class="hero-section__title-box">
                 <h1 class="u-heading-l hero-section__title-box-title-language">Us</h1>
@@ -33,7 +46,7 @@
 
         </section>
 
-        <section class="section-affixes">
+        <section id="affixes" class="section-affixes">
             <div class="l-container-md">
                 <div class="affixes">
                     <h1 class="u-heading-md">Affixes</h1>
@@ -58,7 +71,7 @@
                         feedback. I will be rolling out a new survey when we've seen more of the affixes and how they
                         play in the new dungeons.
                 </div>
-                <div class="affixes">
+                <div id="2affixes" class="affixes">
                     <h1 class="u-heading-md">Level 2 affixes</h1>
                     <div class="c-flag">
                         <div class="c-flag__main"></div>
@@ -89,8 +102,8 @@
 
         <section class="section-affixes-and-schedule">
             <div class="l-container-md">
-                <div class="affixes affixes--alt">
-                    <h1 class="u-heading-md">Level 2 affixes</h1>
+                <div id="4affixes" class="affixes affixes--alt">
+                    <h1 class="u-heading-md">Level 4 affixes</h1>
                     <div class="c-flag">
                         <div class="c-flag__main"></div>
                         <div class="c-flag__main c-flag__main--center"></div>
@@ -225,7 +238,7 @@
                 </div>
             </div>
         </section>
-        <section class="considerations-section">
+        <section id="group" class="considerations-section">
             <div class="l-container-md">
                 <div class="considerations-wrapper">
                     <h2 class="u-heading-md">Group considerations</h2>
@@ -291,7 +304,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="l-container">
             <div class="footer__top">
                 <p class="footer__text">suggestions welcome. Reach me by:</p>
