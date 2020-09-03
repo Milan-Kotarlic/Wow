@@ -11,6 +11,11 @@
     fill: $color-red;
     width: 6px;
     height: 6px;
+    animation-name: box-size;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-delay: 0.3s;
 
     @include mq($tablet, min) {
         width: 11px;
@@ -19,9 +24,11 @@
 
     &--center {
         fill: $color-beige;
+        animation-delay: 0.4s;
     }
 
     &--right {
         fill: $color-green;
+        animation-delay: 0.5s;
     }
 }
