@@ -109,7 +109,7 @@ p, li, a {
       margin-bottom: 3rem; } }
 
 .c-flag__main {
-  background-color: #E74315;
+  fill: #E74315;
   width: 6px;
   height: 6px; }
   @media screen and (min-width: 991px) {
@@ -117,9 +117,9 @@ p, li, a {
       width: 11px;
       height: 11px; } }
   .c-flag__main--center {
-    background-color: #FFB86C; }
+    fill: #FFB86C; }
   .c-flag__main--right {
-    background-color: #50FA7B; }
+    fill: #50FA7B; }
 
 @media screen and (min-width: 640px) {
   .c-boxes {
@@ -696,3 +696,8 @@ td, th {
     content: '\25A0';
     color: #50FA7B;
     margin-right: 1.4rem; }
+
+.icon-home {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: magenta; }
