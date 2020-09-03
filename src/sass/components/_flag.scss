@@ -8,7 +8,7 @@
 }
 
 .c-flag__main {
-    background-color: $color-red;
+    fill: $color-red;
     width: 6px;
     height: 6px;
 
@@ -18,10 +18,10 @@
     }
 
     &--center {
-        background-color: $color-beige;
+        fill: $color-beige;
     }
 
     &--right {
-        background-color: $color-green;
+        fill: $color-green;
     }
 }

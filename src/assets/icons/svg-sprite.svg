@@ -1,0 +1,11 @@
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 11 11"  xmlns="http://www.w3.org/2000/svg" id="green">
+    <path d="M0 0h11v11H0z"></path>
+  </symbol>
+  <symbol viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg" id="beige">
+    <path d="M0 0h11v11H0z"></path>
+  </symbol>
+  <symbol viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg" id="red">
+    <path d="M0 0h11v11H0z"></path>
+  </symbol>
+</svg>
