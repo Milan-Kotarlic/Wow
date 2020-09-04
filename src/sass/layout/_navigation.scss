@@ -6,20 +6,23 @@
 	text-align: right;
 	padding: 1rem;
 	font-size: 1.2rem;
-	background-color: rgba($black, 0.5);
 	font-weight: 700;
+	background-color: rgba($black, 0.7);
 
 	@include mq($tablet, min) {
+		font-size: 1.6rem;
+		padding: 0 1rem;
+	}
+
+	@include mq($tablet-l, min) {
 		font-size: 1.8rem;
-		padding: 1.5rem 1rem;
-		background-color: rgba($black, 0.7);
 	}
 }
 
 .navigation__hamburger {
 	display: inline-block;
 	position: relative;
-	left: 1.5rem;
+	left: 1rem;
 	top: -0.2rem;
 	width: 1.6rem;
 	height: 2px;
@@ -42,8 +45,8 @@
 	&::after {
 		top: 1.2rem;
 	}
-	
 }
+
 .navigation__checkbox {
 	position: relative;
 	opacity: 0;
@@ -56,19 +59,117 @@
 .navigation__list {
 	display: none;
 	list-style-type: none;
-	transition: all 1s ease;
+	width: 100%;
 
 	@include mq($tablet, min) {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 	}
+}
 
+.navigation__item {
+	overflow: none;
+
+	@include mq($tablet, min) {
+		display: inline-block;
+	}
+}
+
+.navigation__item:hover>.navigation__link {
+
+		@include mq($tablet, min) {
+			background-color: $color-red;
+			border-radius: 5px;
+		
+			&::after {
+				display: block;
+			}
+		}
+}
+
+.navigation__item:hover>.navigation__link--drop {
+	
+	&::after {
+		display: none;
+	}
 }
 
 .navigation__link {
 	color: $white;
 	text-decoration: none;
 	text-transform: uppercase;
+	position: relative;
+	padding: 0.5rem;
+	position: relative;
+
+	@include mq($tablet, min) {
+		padding: 1rem 2.5rem;
+		display: inline-block;
+	}
+
+	@include mq($tablet-l, min) {
+		padding: 2rem 5rem;
+	}
+
+	&::after {
+		content: '';
+		display: none;
+		position: absolute;
+		bottom: -1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid $color-red;
+		z-index: 20;
+	}
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown:hover>.dropdown__list {
+
+	@include mq($tablet, min) {
+		display: flex;
+	}
+}
+
+.dropdown__list {
+	display: flex;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	transition: all 1s ease;
+	font-size: 1rem;
+
+	@include mq($tablet, min) {
+		display: none;
+		background-color: rgba($black, 0.7);
+		flex-direction: column;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: fit-content;
+		font-size: 1.8rem;
+	}
+
+	.navigation__link {
+		color: $text;
+
+		@include mq($tablet, min) {
+			color: $white;
+		}
+	}
+
+	.navigation__link--drop {
+	 width: 100%
+	}
 }
 
 .navigation__checkbox:checked~.navigation__list {
