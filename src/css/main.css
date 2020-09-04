@@ -521,9 +521,11 @@ td, th {
 @media screen and (min-width: 991px) {
   .navigation__item:hover > .navigation__link {
     background-color: #E74315;
-    border-radius: 5px; }
-    .navigation__item:hover > .navigation__link::after {
-      opacity: 1; } }
+    border-radius: 5px; } }
+
+@media screen and (min-width: 991px) {
+  .dropdown:hover > .navigation__link::after {
+    opacity: 1; } }
 
 .navigation__item:hover > .navigation__link--drop::after {
   display: none; }

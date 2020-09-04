@@ -162,6 +162,12 @@
 	@include mq($tablet, min) {
 		background-color: $color-red;
 		border-radius: 5px;
+	}
+}
+
+.dropdown:hover>.navigation__link {
+	
+	@include mq($tablet, min) {
 	
 		&::after {
 			opacity: 1;
