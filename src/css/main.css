@@ -242,6 +242,18 @@ p, li, a {
     .box__note {
       font-size: 1.4rem; } }
 
+.c-boxes--alt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 100%; }
+  .c-boxes--alt .box {
+    min-width: 100%; }
+    @media screen and (min-width: 640px) {
+      .c-boxes--alt .box {
+        min-width: 47%; } }
+
 .table-wrapper {
   overflow-x: auto;
   height: 36rem;
@@ -659,9 +671,12 @@ td, th {
 .affixes {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   border-bottom: 1px solid #6f6f6f;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  overflow: hidden;
+  width: 100%; }
   @media screen and (min-width: 1199px) {
     .affixes {
       padding: 0 10rem 3.2rem; } }

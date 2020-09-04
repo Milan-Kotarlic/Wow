@@ -6,11 +6,13 @@
     }
 }
 
+
 .box {
     position: relative;
     padding: 2rem;
     margin: 1rem;
     transition: all .3s ease;
+
     
 
     &:hover {
@@ -114,5 +116,22 @@
 
     @include mq($tablet, min) {
         font-size: 1.4rem;
+    }
+}
+
+.c-boxes--alt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+
+
+    .box {
+        min-width: 100%;
+
+        @include mq($phone, min) {
+        min-width: 47%;
+        }
     }
 }
