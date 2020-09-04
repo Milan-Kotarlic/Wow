@@ -22,8 +22,8 @@
 .navigation__hamburger {
 	display: inline-block;
 	position: relative;
-	left: 1rem;
-	top: -0.2rem;
+	left: 2rem;
+	top: -0.4rem;
 	width: 1.6rem;
 	height: 2px;
 	background-color: $text;
@@ -50,6 +50,9 @@
 .navigation__checkbox {
 	position: relative;
 	opacity: 0;
+	width: 17px;
+  height: 17px;
+  margin-right: 0.5rem;
 
 	@include mq($tablet, min) {
 		display: none;
@@ -128,9 +131,7 @@
 	justify-content: flex-end;
 	transition: opacity 0.5s ease;
 	font-size: 1rem;
-	visibility: hidden;
-
-
+	
 	@include mq($tablet, min) {
 		background-color: rgba($black, 0.7);
 		flex-direction: column;
@@ -140,6 +141,7 @@
 		width: auto;
 		font-size: 1.8rem;
 		opacity: 0;
+		visibility: hidden;
 	}
 
 	.navigation__link {
