@@ -410,8 +410,8 @@ td, th {
 .navigation__hamburger {
   display: inline-block;
   position: relative;
-  left: 1rem;
-  top: -0.2rem;
+  left: 2rem;
+  top: -0.4rem;
   width: 1.6rem;
   height: 2px;
   background-color: #bcbcbc; }
@@ -431,7 +431,10 @@ td, th {
 
 .navigation__checkbox {
   position: relative;
-  opacity: 0; }
+  opacity: 0;
+  width: 17px;
+  height: 17px;
+  margin-right: 0.5rem; }
   @media screen and (min-width: 991px) {
     .navigation__checkbox {
       display: none; } }
@@ -495,8 +498,7 @@ td, th {
   flex-wrap: wrap;
   justify-content: flex-end;
   transition: opacity 0.5s ease;
-  font-size: 1rem;
-  visibility: hidden; }
+  font-size: 1rem; }
   @media screen and (min-width: 991px) {
     .dropdown__list {
       background-color: rgba(0, 0, 0, 0.7);
@@ -506,7 +508,8 @@ td, th {
       transform: translateX(-50%);
       width: auto;
       font-size: 1.8rem;
-      opacity: 0; } }
+      opacity: 0;
+      visibility: hidden; } }
   .dropdown__list .navigation__link {
     color: #bcbcbc; }
     @media screen and (min-width: 991px) {
