@@ -49,8 +49,11 @@
 
 .hero-section__title-box-title-language {
     color: $text;
-    margin-right: 1rem;
     position: relative;
+
+    @include mq($phone, min) {
+        margin-right: 1rem;
+    }
 
     @include mq($tablet, min) {
         margin-right: 3rem;
