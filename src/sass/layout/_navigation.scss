@@ -69,7 +69,6 @@
 }
 
 .navigation__item {
-	overflow: none;
 	position: relative;
 
 	@include mq($tablet, min) {
@@ -117,18 +116,20 @@
 
 	@include mq($tablet, min) {
 		opacity: 1;
+		visibility: visible;
 	}
 }
 
 .dropdown__list {
 	display: flex;
 	text-align: center;
-	width: 100%;
 	margin: 0;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	transition: all 0.5s ease;
+	transition: opacity 0.5s ease;
 	font-size: 1rem;
+	visibility: hidden;
+
 
 	@include mq($tablet, min) {
 		background-color: rgba($black, 0.7);
@@ -136,7 +137,7 @@
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
-		width: fit-content;
+		width: auto;
 		font-size: 1.8rem;
 		opacity: 0;
 	}
