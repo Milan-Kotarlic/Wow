@@ -7,10 +7,7 @@
     text-align: center;
     padding: 9rem 1rem 12rem;;
     position: relative;
-
-    @include mq($lap-small, min) {
-        height: 100vh;
-    }
+    height: 100vh;
 }
 
 .hero-section__text {
@@ -94,11 +91,12 @@
 .hero-section__scroll {
     position: absolute;
     left: 2rem;
-    bottom: 10rem;
+    bottom: 7rem;
     transform: rotate(-90deg);
 
     @include mq($lap-small, min) {
         left: 10.9rem;
+        bottom: 10rem;
     }
 }
 
