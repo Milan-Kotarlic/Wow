@@ -559,10 +559,8 @@ td, th {
   color: #bcbcbc;
   text-align: center;
   padding: 9rem 1rem 12rem;
-  position: relative; }
-  @media screen and (min-width: 1250px) {
-    .hero-section {
-      height: 100vh; } }
+  position: relative;
+  height: 100vh; }
 
 .hero-section__text {
   font-size: 1.2rem;
@@ -637,11 +635,12 @@ td, th {
 .hero-section__scroll {
   position: absolute;
   left: 2rem;
-  bottom: 10rem;
+  bottom: 7rem;
   transform: rotate(-90deg); }
   @media screen and (min-width: 1250px) {
     .hero-section__scroll {
-      left: 10.9rem; } }
+      left: 10.9rem;
+      bottom: 10rem; } }
 
 .hero-section__scroll-text {
   position: relative;
