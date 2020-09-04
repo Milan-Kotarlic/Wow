@@ -353,7 +353,7 @@ td, th {
   display: none;
   list-style-type: none;
   width: 100%;
-  transition: all 0.5s ease; }
+  transition: all 0.4s ease; }
   @media screen and (min-width: 991px) {
     .navigation__list {
       display: flex;
