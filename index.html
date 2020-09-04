@@ -20,15 +20,24 @@
     <nav class="navigation">
         <div class="l-container">
             <span class="navigation__hamburger">&nbsp;</span>
-        <input type="checkbox" class="navigation__checkbox">
-        <ul class="navigation__list">
-            <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
-            <li class="navigation__item"><a href="#affixes" class="navigation__link">Affixes</a></li>
-            <li class="navigation__item"><a href="#2affixes" class="navigation__link">Level 2</a></li>
-            <li class="navigation__item"><a href="#4affixes" class="navigation__link">Level 4</a></li>
-            <li class="navigation__item"><a href="#group" class="navigation__link">Considerations</a></li>
-            <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-        </ul>
+            <input type="checkbox" class="navigation__checkbox">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#affixes" class="navigation__link">Affixes</a></li>
+                <li class="navigation__item"><a href="#4affixes" class="navigation__link">Level-4</a></li>
+                <li class="navigation__item dropdown"><a href="#2affixes" class="navigation__link">Level-2</a>
+                    <ul class="navigation__list navigation__list--dropdown dropdown__list">
+                        <li class="navigation__item"><a href="#home" class="navigation__link navigation__link--drop">Home</a></li>
+                        <li class="navigation__item"><a href="#affixes" class="navigation__link navigation__link navigation__link--drop">Affixes</a></li>
+                        <li class="navigation__item"><a href="#2affixes" class="navigation__link navigation__link navigation__link--drop">Level 2</a></li>
+                        <li class="navigation__item"><a href="#4affixes" class="navigation__link navigation__link navigation__link--drop">Level 4</a></li>
+                        <li class="navigation__item"><a href="#group" class="navigation__link navigation__link navigation__link--drop">Considerations</a></li>
+                        <li class="navigation__item"><a href="#contact" class="navigation__link navigation__link navigation__link--drop">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item"><a href="#group" class="navigation__link">Considerations</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+            </ul>
         </div>
     </nav>
     <main>
@@ -52,7 +61,7 @@
                 <svg class="c-flag__main c-flag__main--right">
                     <use xlink:href="./src/assets/icons/svg-sprite.svg#green"></use>
                 </svg>
-               </div>
+            </div>
             <p class="hero-section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             <div class="hero-section__scroll">
                 <p class="hero-section__scroll-text">Scroll</p>
@@ -74,7 +83,7 @@
                         <svg class="c-flag__main c-flag__main--right">
                             <use xlink:href="./src/assets/icons/svg-sprite.svg#green"></use>
                         </svg>
-                       </div>
+                    </div>
                     <p class="affixes__legend">Legend:</p>
                     <div class="buttons">
                         <a href="#" class="buttons__button buttons__button--1">ease difficulty</a>
@@ -103,7 +112,7 @@
                         <svg class="c-flag__main c-flag__main--right">
                             <use xlink:href="./src/assets/icons/svg-sprite.svg#green"></use>
                         </svg>
-                       </div>
+                    </div>
                     <p class="affixes__legend affixes__legend--alt">(THESE OCCUR ON ALL KEYSTONES, ALTERNATING WEEKLY)
                     </p>
                     <div class="c-boxes">
@@ -140,7 +149,7 @@
                         <svg class="c-flag__main c-flag__main--right">
                             <use xlink:href="./src/assets/icons/svg-sprite.svg#green"></use>
                         </svg>
-                       </div>
+                    </div>
                     <p class="affixes__legend affixes__legend--alt">(These occur on all keystones, alternating weekly)
                     </p>
                     <div class="c-boxes">
@@ -284,7 +293,7 @@
                         <svg class="c-flag__main c-flag__main--right">
                             <use xlink:href="./src/assets/icons/svg-sprite.svg#green"></use>
                         </svg>
-                       </div>
+                    </div>
                     <p class="considerations__text affixes__legend--alt-line">Group makeup barely matters at low
                         keystone levels. There is little reason to
                         sweat your group composition on keys below 5-6. Bring the player, not the class.</p>
@@ -320,7 +329,7 @@
                         <svg class="c-flag__main c-flag__main--right">
                             <use xlink:href="./src/assets/icons/svg-sprite.svg#green"></use>
                         </svg>
-                       </div>
+                    </div>
                     <h2 class="u-heading-sm considerations__heading-sm">Weakauras</h2>
                     <div class="cosiderations__group considerations__group--alt">
                         <p class="considerations__group-text considerations__group-text--alt"><a
@@ -367,11 +376,11 @@
         <div class="footer__bottom">
             <p class="footer__bottom-text">
                 World of Warcraft, Warcraft and Blizzard Entertainment are trademarks or
-            registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
+                registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.
             </p>
         </div>
     </footer>
-  
+
 </body>
 
 </html>
