@@ -220,10 +220,14 @@ p, li, a {
     width: 8.4rem;
     bottom: -1rem;
     background-color: #ba3016;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    bottom: -1rem; }
     @media screen and (min-width: 1199px) {
       .box__text::after {
         bottom: -1.9rem; } }
+    @media screen and (min-width: 991px) {
+      .box__text::after {
+        bottom: -2rem; } }
   @media screen and (min-width: 991px) {
     .box__text {
       font-size: 1.8rem;
@@ -839,7 +843,8 @@ td, th {
     transform: translateX(-50%);
     left: 0;
     transform: initial;
-    background-color: #50FA7B; }
+    background-color: #50FA7B;
+    bottom: -0.5rem; }
     @media screen and (min-width: 1199px) {
       .considerations__heading-sm::before {
         bottom: -1.9rem; } }
