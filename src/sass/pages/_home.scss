@@ -131,9 +131,12 @@
 .affixes {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     border-bottom: 1px solid $border;
     padding: 2rem 0;
+    overflow: hidden;
+    width: 100%;
 
     @include mq($tablet-l, min) {
         padding: 0 10rem 3.2rem;
