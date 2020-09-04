@@ -129,7 +129,6 @@
 	justify-content: flex-end;
 	transition: all 0.5s ease;
 	font-size: 1rem;
-	opacity: 0;
 
 	@include mq($tablet, min) {
 		background-color: rgba($black, 0.7);
@@ -139,6 +138,7 @@
 		transform: translateX(-50%);
 		width: fit-content;
 		font-size: 1.8rem;
+		opacity: 0;
 	}
 
 	.navigation__link {
